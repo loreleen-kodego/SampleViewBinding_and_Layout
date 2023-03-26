@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_corner_gray">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_leather_shoes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="@+id/textview_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/textview_product_name"
+        app:srcCompat="@drawable/img_shoes" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/leather_shoes"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/price"
+        app:layout_constraintEnd_toEndOf="@+id/textview_price_value"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textview_product_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_price_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/five_thousand_pesos"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textview_price_label" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_size_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_price_label"
+        app:layout_constraintTop_toTopOf="@+id/textview_price_label" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/appCompatSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="@string/size"
+        app:layout_constraintEnd_toEndOf="@+id/textview_size_label"
+        app:layout_constraintStart_toStartOf="@+id/textview_size_label"
+        app:layout_constraintTop_toBottomOf="@+id/textview_size_label" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SampleViewBinding</string>
+    <string name="kodego">Kodego</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="your_name">Your name is %s</string>
+    <string name="leather_shoes">Leather Shoes</string>
+    <string name="price">Price</string>
+    <string name="five_thousand_pesos">P5,000</string>
+    <string name="size">Size</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="card_details">Card details</string>
+    <string name="card_number">Card number</string>
+    <string name="card_name">Card Name</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="checkout">Checkout</string>
+</resources>
